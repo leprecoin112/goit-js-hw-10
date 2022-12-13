@@ -18,7 +18,7 @@ refs.searchBox.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 function onSearch(e) {
   const text = e.target.value.trim();
   clearCountry();
-  if (text == '') {
+  if (text === '') {
     return;
   }
   fetchCountries(text)
